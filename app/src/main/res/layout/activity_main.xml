@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +8,12 @@
     android:layout_margin="10dp"
     android:layout_marginTop="10dp"
     tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
 
     <include
         android:id="@+id/toolbar"
@@ -29,17 +35,17 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="130dp"
         android:text="@string/start_a_new_journey"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        tools:layout_editor_absoluteY="148dp" />
+        tools:layout_editor_absoluteY="147dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
+        android:layout_width="100dp"
 
 
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:contentDescription="@string/todo"
@@ -219,7 +225,7 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView2"
+                    android:layout_below="@id/cycle"
                     android:layout_centerHorizontal="true"
                     android:layout_margin="10dp"
                     android:fontFamily="@font/aclonica"
@@ -227,7 +233,7 @@
                     android:textSize="24sp" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/cycle"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
@@ -250,10 +256,24 @@
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_below="@id/airplane"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="TextView"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/airplane"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/icons8_airplane_take_off_100" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
