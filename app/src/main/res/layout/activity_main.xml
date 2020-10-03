@@ -96,10 +96,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/sendMessage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:onClick="sendMessage">
 
             <RelativeLayout
                 android:layout_width="match_parent"
