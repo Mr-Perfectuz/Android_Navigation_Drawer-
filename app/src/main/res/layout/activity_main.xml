@@ -28,16 +28,17 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/start_a_new_journey"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         tools:layout_editor_absoluteY="148dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="147dp"
+        android:layout_width="160dp"
 
-        android:layout_height="135dp"
+
+        android:layout_height="160dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/todo"
@@ -46,12 +47,13 @@
         app:srcCompat="@drawable/icons8_cycling_100" />
 
     <LinearLayout
+        android:id="@+id/linear_layout1"
         android:layout_width="0dp"
         android:layout_height="175dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
@@ -59,8 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            app:cardElevation="2dp">
+            android:layout_weight="1">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -73,84 +74,7 @@
                     android:layout_below="@id/imageView2"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/baloo"
-                    android:text="Walking"
-                    android:textSize="24sp" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    app:srcCompat="@drawable/icons8_walking_100" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1" >
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView3"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/baloo"
-                    android:text="Boating"
-                    android:textSize="24sp" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    app:srcCompat="@drawable/icons8_sail_boat_100" />
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="175dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            app:cardElevation="2dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView2"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/baloo"
+                    android:fontFamily="@font/aclonica"
                     android:text="Walking"
                     android:textSize="24sp" />
 
@@ -181,7 +105,7 @@
                     android:layout_below="@id/imageView3"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/baloo"
+                    android:fontFamily="@font/aclonica"
                     android:text="Boating"
                     android:textSize="24sp" />
 
@@ -192,10 +116,67 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     app:srcCompat="@drawable/icons8_sail_boat_100" />
-
             </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout1">
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Bus"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/icons8_bus_100" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
