@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bus"></activity>
+        <activity android:name=".ActivityPlane"></activity>
+        <activity android:name=".ActivityCycling" />
+        <activity android:name=".ActivityBusMenu" />
+        <activity android:name=".ActivityTrain" />
+        <activity android:name=".ActivityBoating" />
+        <activity android:name=".ActivityWalking" />
+        <activity android:name=".Bus" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     Toolbar toolbar;
 
+    /** For intent **/
+    private CardView bus_main_activity;
 
 
     @Override
@@ -56,13 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setCheckedItem(R.id.nav_home);
 
         /**-------------------**/
-        CardView cardView = findViewById(R.id.sendMessage);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
     }
 
