@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /** For intent **/
+        bus_main_activity = findViewById(R.id.nav_bus_bar);
+        bus_main_activity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { 
+            }
+        });
 
 
 
