@@ -65,6 +65,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setCheckedItem(R.id.nav_home);
 
         /**-------------------**/
+        bus_main_activity = findViewById(R.id.nav_bus_bar);
+        bus_main_activity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivitybus_menu();
+            }
+
+            private void openActivitybus_menu() {
+                Intent intent = new Intent(MainActivity.this, ActivityBusMenu.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
