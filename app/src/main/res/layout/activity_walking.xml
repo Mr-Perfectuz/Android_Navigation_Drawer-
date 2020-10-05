@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:gravity="center"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".ActivityWalking"
-    android:id="@+id/walking_activity">
+    tools:context=".ActivityBoating">
 
     <TextView
-        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
-        android:text="WalkingActivity"
+        android:text="Activity walking"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="349dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:gravity="center"
+        />
+
+</RelativeLayout>
