@@ -129,6 +129,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/nav_boat_bar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -172,6 +173,7 @@
         app:layout_constraintTop_toBottomOf="@id/linear_layout1">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/nav_buss_bar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -203,6 +205,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/nav_train_bar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -245,6 +248,7 @@
         app:layout_constraintTop_toBottomOf="@id/linear_layout2">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/nav_cycle_bar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -262,7 +266,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_margin="10dp"
                     android:fontFamily="@font/aclonica"
-                    android:text="TextView"
+                    android:text="Cycling"
                     android:textSize="24sp" />
 
                 <ImageView
@@ -276,6 +280,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/nav_plane_bar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -293,7 +298,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/aclonica"
-                    android:text="TextView"
+                    android:text="Plane"
                     android:textSize="24sp" />
 
                 <ImageView
